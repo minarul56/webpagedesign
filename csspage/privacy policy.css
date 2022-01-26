@@ -1,0 +1,557 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,400&display=swap');
+
+*{margin:0; padding:0;}
+
+body, p{
+	font-family: 'Work Sans', sans-serif;
+	font-size:15px;
+	line-height:1.5;
+
+}
+
+
+
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Oswald', sans-serif;
+	font-weight: 500;
+
+}
+section{
+	padding:80px 0px;
+}
+
+
+
+
+
+.container {
+    width: 1125px;
+    margin: auto;
+    padding: 0px 15px;
+}
+
+
+.topBerWrapper {
+    overflow: hidden;
+}
+
+.topBerMain {
+    background: #edecec;
+}
+
+.phone {
+    width: 244px;
+    float: left;
+    padding: 12px 0px;
+    border-left: 1px solid #d5d5d5;
+}
+
+.email {
+    width: 707px;
+    float: left;
+    padding: 12px 0px;
+    border-left: 1px solid #d5d5d5;
+}
+
+.social {
+    width: 162px;
+    float: right;
+    border-left: 1px solid #d5d5d5;
+}
+
+
+.phone i {
+    color: #ff5200;
+    padding: 0px 12px;
+}
+
+.email i {
+    color: #ff5200;
+    padding: 0px 12px;
+}
+
+.social i {
+    color: #181818;
+    padding: 0px 10px;
+	transition: .4s;
+}
+
+.social a {
+    display: block;
+    float: left;
+    width: 50px;
+    padding: 16px 0px;
+    border-right: 1px solid #d5d5d5;
+    text-align: center;
+}
+
+.social i:hover {
+    color: #ff5200;
+    
+}
+
+
+/*mainmenu design*/
+
+.primaryMenu {
+}
+
+.primaryWrapper {
+    overflow: hidden;
+}
+
+.logo {
+    width: 200px;
+    float: left;
+    padding: 20px 0px;
+}
+
+.menu {
+    width: 834px;
+    float: right;
+}
+
+ul.menuItems {
+    list-style: none;
+    float: right;
+}
+
+ul.menuItems li {
+    float: left;
+}
+
+
+
+ul.menuItems li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 31px 11px;
+    display: block;
+    color: #181818;
+    font-family: 'Oswald';
+}
+ul.menuItems li a.active {
+    color: #ff5200;
+}
+
+ul.menuItems li a:hover {
+    color: #ff5200;
+    transition: 0.3s;
+}
+
+
+ul.menuItems li a i {
+    padding: 0px 5px;
+}
+
+ul.menuItems li:last-child {
+    margin-top: 4px;
+}
+
+
+
+/* Sub menu design*/
+
+ul#SubMenu {
+    width: 208px;
+    padding: 25px;
+    list-style: none;
+    position: absolute;
+    top: 136px;
+    transform: scaleY(0);
+    transform-origin: top;
+	background: white;
+    transition: .6s;
+    border-top: 1px solid #c5c5c5;
+}
+
+ul#SubMenu li {
+    float: none;
+}
+
+ul#SubMenu li a {
+	text-transform: capitalize;
+	font-weight: 600;
+	font-family: sans-serif;
+	padding: 5px 0px;
+	font-size: 15px;
+	position: relative;
+	left: 0px;
+	}
+	
+	
+ul#SubMenu li a:before {
+	content: "";
+	display: inline-block;
+	width: 0px;
+	background: #ff5200;
+	height: 2px;
+	vertical-align: middle;
+	margin-right: 10px;
+	transition: .8s;
+	}
+
+ul#SubMenu li:hover a:before {
+    width: 20px;
+}
+ul.menuItems li:hover ul#SubMenu {
+    display: block;
+    transform:scaleY(1);
+}
+
+ul#SubMenu li a.active {
+    color: #ff5200;
+}
+
+
+/*header background page design*/
+
+
+section#page_header {
+    padding: 0px;
+}
+
+.page_title h2 {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 50px;
+    padding: 150px 0px;
+}
+
+/*nav menu design*/
+
+
+nav#nav_menu {
+    background: #e1e1e1;
+    border-bottom: 1px solid #c1c1c1;
+}
+
+.nav_wrapper {
+    overflow: hidden;
+}
+
+ul.nav_list {
+    list-style: none;
+}
+
+ul.nav_list li {
+    float: left;
+    padding: 17px 0px;
+    margin-right: 23px;
+}
+
+ul.nav_list li  i {
+    color: #b9b7b7;
+    font-size: 14px;
+    margin-top: 6px;
+}
+
+ul.nav_list li a {text-decoration: none;color: #3a3939;font-size: 15px;}
+
+
+.row h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.row p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #656565;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer#footer {
+    background: #1A1A1A;
+    padding-top: 155px;
+}
+
+
+.fboxWrapper {
+    overflow: hidden;
+    margin-bottom: 45px;
+}
+
+.fbox {
+    height: 235px;
+    width: 255px;
+    float: left;
+    padding: 0px 11px;
+}
+
+.fbox:last-child {
+    margin-right: 0px;
+}
+.fbox h2 {
+	color:white;
+    margin-bottom: 20px;
+}
+
+.fbox p {																			
+    color: #ABABAB;
+    line-height: 25px;
+}
+
+.fboxMeta {
+    overflow: hidden;
+}
+
+.fboxicon {
+    width: 30px;
+    float: left;
+    padding-bottom: 8px;
+}
+
+.ficons a {
+    display: block;
+    width: 25px;
+    font-size: 17px;
+    background: #1A1A1A;
+    place-items: center;
+    display: grid;
+    text-decoration: none;
+    float: left;
+    margin-right: 5px;
+    color: #ABABAB;
+}
+
+.ficons a:first-child {
+    width: 12px;
+    padding-right: 4px;
+}
+
+p.fboxparagraph {
+    margin-bottom: 20px;
+    color: #ababab;
+}
+.fbox ul li a {
+	text-decoration: none;
+	color: #ABABAB;
+	transition: 0.4s;
+	}
+
+.fbox ul li {
+    list-style: none;
+    margin-bottom: 8px;
+    border-bottom: 1px dashed #ABABAB;
+}
+
+.fbox ul li:last-child {
+    border-bottom: none;
+}
+
+.fbox ul li a i {
+    margin-bottom: 11px;
+}
+.fbox ul li i {
+    padding-right: 8px;
+}
+
+.fboxicon i {
+    color: #ff5200;
+    font-size: 17px;
+}
+
+.fboxMeta p {
+    line-height: 20px;
+    color: #ababab;
+}
+
+
+.fboxMeta {
+    overflow: hidden;
+    margin-bottom: 12px;
+}
+
+.leftbox {
+    height: 75px;
+    width: 50px;
+    text-align: center;
+    float: left;
+    color: white;
+    margin-right: 20px;
+    background: #313131;
+    border: 1px solid #313131;
+    border-radius: 3px;
+}
+.rightbox i {
+    font-size: 13px;
+    padding-right: 14px;
+}
+
+.topbox {
+    margin-bottom: 31px;
+}
+
+.rightbox p {
+    font-size: 12px;
+    display: inline;
+    padding-right: 25px;
+}
+
+.leftbox strong {
+    font-size: 25px;
+}
+
+.leftbox span {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.rightbox h3 {
+    color: #ABABAB;
+    margin-bottom: 7px;
+    line-height: 21px;
+    transition: .4s;
+}
+.copyrightcontainer {
+    overflow: hidden;
+    color: #ABABAB;
+    border-top: 1px solid #d7b1b1;
+}
+
+.copyrightcontainer .container {
+    overflow: hidden;
+}
+
+.copyrighttext {
+    width: 616px;
+    float: left;
+    padding: 30px 0px;
+}
+
+.copyrightmenu {
+    width: 486px;
+    float: right;
+}
+
+.copyrightmenu ul {
+    list-style: none;
+    overflow: hidden;
+    float: right;
+}
+
+
+.copyrightmenu ul li {
+    float: left;
+    padding: 30px 15px;
+}
+
+.copyrightmenu ul li a {
+    text-decoration: none;
+    color: #ABABAB;
+    cursor: pointer;
+}
+
+.fbox a:hover {
+    color: #ff5200;
+	cursor:pointer;
+}
+
+.rightbox h3:hover {
+    color: #ff5200;
+	cursor:pointer;
+}
+
+.copyrightmenu li a:hover {
+    cursor: pointer;
+}
+
+section#subscribe {
+    margin-bottom: -165px;
+    position: relative;
+}
+
+.subscribeWrappper {
+    border-radius: 10px;
+    overflow: hidden;
+    background: #FF5200;
+    padding: 35px 0px;
+}
+
+.subsinglebox {
+    color: white;
+    width: 312px;
+    float: left;
+    padding: 0px 29px;
+}
+
+.subsinglebox h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.subsinglebox p {
+    line-height: 24px;
+    font-size: 16px;
+}
+
+.subsinglebox a{
+	width: 39px;
+	display: grid;
+	border: 1px solid white;
+	float: left;
+	place-items: center;
+	color: white;
+	height: 39px;
+	border-radius: 100%;
+	margin-right: 15px;
+	text-decoration: none;
+	transition: .5s;
+}
+.subsinglebox a:hover{
+	background:white;
+	color:black;
+}
+
+.inputbox {
+    overflow: hidden;
+    position: relative;
+}
+
+.inputbox input:first-child {
+    border: none;
+    outline: none;
+    padding: 15px;
+    width: 83%;
+    font-size: 16px;
+    font-family: 'Oswald';
+    letter-spacing: 0.6px;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+}
+
+.inputbox input:last-child {
+    padding: 16px;
+    border: none;
+    border-radius: 50px;
+    width: 120px;
+    outline: none;
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: .7px;
+    background: black;
+    position: absolute;
+    color: white;
+    top: 0px;
+    right: 0px;
+}

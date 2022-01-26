@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<title>image Slider</title>
+	</head>
+	<body>
+	
+	
+		<button onclick="prev()"> previous</button>
+			<img src="imagepage/1.jpg"/>
+		
+		<button onclick="next()"> Next</button>
+	
+	
+	<script>
+	
+		let photos = ["imagepage/1.jpg", "imagepage/2.jpg","imagepage/3.jpg",
+"imagepage/4.jpg","imagepage/5.jpg","imagepage/6.jpg",
+"imagepage/7.jpg","imagepage/8.jpg"];
+
+let imgTag = document.querySelector("img");
+let count = 0;
+
+function next(){
+    count++;
+    if(count >= photos.length){
+       count = 0;
+        imgTag.src = photos[count];
+    }else{
+        imgTag.src = photos[count];
+    };
+};
+
+function prev(){
+    count--;
+       if(count < 0 ){
+       count =  photos.length-1;
+        imgTag.src = photos[count];
+    }else{
+        imgTag.src = photos[count];
+    };
+    
+    imgTag.src = photos[count];
+
+};
+	
+	
+	</script>
+	
+	</body>
+</html>
